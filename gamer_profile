@@ -1,0 +1,25 @@
+user_profile = {
+
+  'age': 15,
+  'username': 'MonkeyGloves',
+  'weapon': 'Banana Machete',
+  'is_active': True,
+  'clan': 'Primates'
+}
+print(user_profile);
+
+user_profile['weapon'] = 'Banana Machete','Jungle Gun';
+print(user_profile);
+
+user_profile['is_banned'] = False;
+print(user_profile);
+
+user_profile['is_banned'] = True;
+print(user_profile);
+
+user2_profile = user_profile.copy()
+user2_profile['age'] = 24
+user2_profile['username'] = 'OoooEeee34'
+
+print(user_profile);
+print(user2_profile)
