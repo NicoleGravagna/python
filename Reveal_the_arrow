@@ -1,0 +1,53 @@
+#picture is the original list of lists
+#the task is to turn the zeros into spaces and
+#turn the 1s into *s
+#and to keep the original formatting
+
+picture = [
+  [0,0,0,1,0,0,0],
+  [0,0,1,1,1,0,0],
+  [0,1,1,1,1,1,0],
+  [1,1,1,1,1,1,1],
+  [0,0,0,1,0,0,0],
+  [0,0,0,1,0,0,0],
+]
+
+#for big_list in range (1,6):
+  #for inner_list in range (1,7):
+#print(picture [])
+#_ = 0
+#while _ < 5:
+    #str(picture)
+  
+    #picture_mutated = map(str,picture)
+picture_mutated = str(picture)
+picture_mutated = picture_mutated.replace('[', '')
+picture_mutated = picture_mutated.replace(']', '')
+picture_mutated = picture_mutated.replace(',', '')
+picture_mutated = picture_mutated.replace(' ', '')
+picture_mutated = picture_mutated.replace('0', ' ')
+picture_mutated = picture_mutated.replace('1', '*')
+picture_mutated
+
+#picture_mutated = ''.join(picture_mutated)
+    #replaced_char = picture_mutated.replace('0','-')
+print (picture_mutated[0:7])
+print (picture_mutated[7:14])
+print (picture_mutated[14:21])
+print (picture_mutated[21:28])
+print (picture_mutated[28:35])
+print (picture_mutated[35:42])
+
+   # _+=1
+
+
+
+
+
+
+#below: training wheels stuff I used, then cut
+#print (picture[line+1])
+#print (picture[line+2])
+#print (picture[line+3])
+#print (picture[line+4])
+#print (picture[line+5])
