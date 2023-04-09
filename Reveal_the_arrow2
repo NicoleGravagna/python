@@ -1,0 +1,27 @@
+#picture is the original list of lists
+#the task is to turn the zeros into spaces and
+#turn the 1s into *s
+#and to keep the original formatting
+
+
+# New instructions: use print, end, and if statements in the solution
+
+picture = [
+  [0,0,0,1,0,0,0],
+  [0,0,1,1,1,0,0],
+  [0,1,1,1,1,1,0],
+  [1,1,1,1,1,1,1],
+  [0,0,0,1,0,0,0],
+  [0,0,0,1,0,0,0],
+]
+
+
+for x in picture[:]:
+  x.append(2)
+  for y in x [:]:
+    if y == 0:
+       print (' ', end = '')
+    if y == 1:
+       print ('*', end = '')
+    if y == 2:
+       print ('\n',end = '')
