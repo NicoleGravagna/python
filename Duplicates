@@ -1,0 +1,8 @@
+# Output the duplicates in a list
+
+some_list = ['a', 'b', 'c', 'b', 'd', 'm', 'n', 'n']
+
+
+for duplicates in some_list:
+  if some_list.count(duplicates) > 1:
+    print (duplicates)
