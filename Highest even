@@ -5,14 +5,12 @@
 
 
 def highest_even(li):
-  x = 0 # placeholder
-  for y in li: #the list
+  x = 0 
+  for y in li: 
   
-    if y % 2 == False: #even
+    if y % 2 == False: 
       if x < y: 
         x = y
-      else:
-        pass
   return (x)
       
 print (highest_even([10,2,3,4,8,11]))
