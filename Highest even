@@ -1,0 +1,18 @@
+# def highest_even(li)
+# print (highest_even([10,2,3,4,8,11]))
+# Make this print the highest even number in the list
+
+
+
+def highest_even(li):
+  x = 0 # placeholder
+  for y in li: #the list
+  
+    if y % 2 == False: #even
+      if x < y: 
+        x = y
+      else:
+        pass
+  return (x)
+      
+print (highest_even([10,2,3,4,8,11]))
