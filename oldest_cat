@@ -1,0 +1,29 @@
+#Given the below class:
+class Cat:
+    species = 'mammal'
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+    def run(self):
+        print('run')
+
+# 1 Instantiate the Cat object with 3 cats
+cat1 = Cat('Penelope', 2)
+cat2 = Cat('Tom', 4)
+cat3 = Cat('Billy', 1)
+
+#print(cat1.name, cat1.age)
+#print(cat2.name, cat2.age)
+#print(cat3.name, cat3.age)
+
+# Task 2: Create a function that finds the oldest cat 
+    #This isn't a function, but it works
+
+cat_roster = [cat1.age,cat2.age,cat3.age]
+sorted_cat_roster = sorted(cat_roster, reverse=True)
+x = sorted_cat_roster[0]
+
+
+# 3 Print out: "The oldest cat is x years old.".
+print(f"The oldest cat is {x} years old.")
